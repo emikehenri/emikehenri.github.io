@@ -107,11 +107,49 @@ transition:transform 0.3s;
     }
   
 }
-@media (max-width: 1300px) {
-    .log{
-        font-size: 120px;
+@media (max-width: 330px) {
+
+    #navbutt {
+        display: hidden;
+        margin-right: 3rem;
     }
+    #navbarNavAltMarkup {
+        margin-right: 10rem;
+    }
+    #logo-nav {
+        margin-left:3rem;
+    }
+    #third-butt {
+        margin-right: 5rem;
+    }
+    #head {
+        color:#EEFABE;
+        font-size: 70px;
+    }
+    #bott {
+        margin-left: 15px;
+        margin-bottom:5px;
+    }
+    #foot {
+        display:flex;
+        flex-direction:column;
+
+    }
+    
 }
+
+@media (min-width: 1300px) {
+    
+    #head {
+        font-size: 130px;
+    }
+    #footnote {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
 #ground{
     background-image: url("Assets/images/bg-image.svg");
 }
@@ -125,7 +163,7 @@ transition:transform 0.3s;
         <a id="logo-nav" class = "navbar-brand" href = "index.html">
             <img src = "Assets/images/third-logo-removebg-preview.png" class = "img-fluid" width = 190px height = 190px>
         </a>
-        <button id = "navbutt" class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button id = "navbutt" class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target= "#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse d-flex justify-content-end " id="navbarNavAltMarkup">
@@ -135,13 +173,12 @@ transition:transform 0.3s;
                 <a class="zoomin nav-link active fs-5 item  mx-2" href="#section-2" style="color:#FFFF;">My Skills</a>
                 <a class="zoomin nav-link active fs-5 item mx-2" href="#section-1" style="color:#FFFF;">About Me</a>
             </div>
-            </div>
         </div>
-       </div>
+    </div>
 </nav>
 <div class = "container-fluid d-flex flex-column justify-content-center align-items-center py-5 my-2" id="ground">
-        <span class = "text-nowrap py-3 lh-1 log mx-auto text-light" style = "font-family:var(--font-fam-two); font-size:130px;"><span style = "color:#F3B50A;">Hi!</span> Im <br><span style = "color:#64C0F2;">Mike</span><br><span class = "fw-bold" style = "color:#56FC61;">Edralin</span> </span>
-        <p class = "zoomin fs-3 text-white mb-4 spag" style = "font-family:var(--font-fam-two); margin-bottom:15rem; position:relative; bottom:2rem;">An Aspiring Frontend Developer</p> 
+        <span id="head" class = "text-nowrap py-3 lh-1 log mx-auto text-light" style = "font-family:var(--font-fam-two);"><span id = "head" style = "color:#F3B50A;">Hi!</span> Im <br><span id = "head" style = "color:#64C0F2;">Mike</span><br><span id = "head"  class = "fw-bold" style = "color:#56FC61;">Edralin</span> </span>
+        <p id = "bott" class = " zoomin fs-3 text-white mb-4 spag log" style = "font-family:var(--font-fam-two);">An Aspiring Frontend Developer</p> 
         <!-- <button class = "zoomin btn btn-lg text-light fw-bold w-25" style = "background-color:#06C767; position:relative; bottom:2rem;">Contact Me</button> -->
            </div>
 <!-- About me section -->
@@ -228,7 +265,7 @@ transition:transform 0.3s;
             <span class = "text-light sp py-3 fs-4" >Contact Me</span>
     
           </div>
-    <ul class="list-unstyled d-flex justify-content-center mx-auto my-3">
+    <ul id = "foot" class="list-unstyled d-flex justify-content-center mx-auto my-3">
         <div class="vr"></div>
         <li class="ms-3 "><a class="text-light" href="https://web.facebook.com/edralin.mikehenri"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="zoomin bi bi-facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -251,7 +288,7 @@ transition:transform 0.3s;
           </svg>Github</a></li>
       </ul><br>
       <div class = "border-top border-3 mx-auto w-50 my-2">
-        <span class = "text-light sp py-3 fs-4 my-3 text-nowrap foot" style = "margin-left:auto;">Developed By: Mike Edralin</span>
+        <span id="footnote" class = "text-light sp py-3 fs-4 my-3 text-nowrap foot" >Developed By:<br> Mike Edralin</span>
 
       </div>
     </footer>  
